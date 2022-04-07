@@ -59,11 +59,11 @@ export default function Header() {
                         onClick={closeMobileMenu}
                       >Staking
                   </Link>
-                  <Link sx={styles.linkOut} rel="noreferrer"
+                  {/* <Link sx={styles.linkOut} rel="noreferrer"
                         href={MemeNFTwhitepaper}
                         target="_blank" onClick={closeMobileMenu}>
                           Whitepaper
-                  </Link>
+                  </Link> */}
 
                 </Box>
               </Flex>

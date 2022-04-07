@@ -18,6 +18,7 @@ import watchtower from 'assets/images/brands/watchtower.png';
 import { Helmet } from 'react-helmet';
 import { Link } from "gatsby";
 import WatchtowerAudit from '../../public/static/MemeNFTwatchtowerAudit.pdf';
+import CopyLinkComponent from "../components/clipboard/clipboard";
 
 const Banner = () => {
   const data = useStaticQuery(graphql`
@@ -49,6 +50,7 @@ const Banner = () => {
               Shop NFTs
             </Button></a>
             </Box>
+            <CopyLinkComponent />
             <Box sx={styles.clients}>
               <a target="_blank" href="https://www.certik.com/projects/memenft"><Img sx={styles.clientImg} src={certik} alt="certik" /></a>
               <a target="_blank" href="https://coinmarketcap.com/currencies/memenft/"><Img sx={styles.clientImg} src={cmc} alt="cmc" /></a>

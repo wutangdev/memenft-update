@@ -376,4 +376,83 @@ export default {
       whiteSpace: 'nowrap !important',
     },
   },
+  adressWrap: {
+    display: '-webkit-box',
+    display: '-webkit-flex',
+    display: '-ms-flexbox',
+    display: 'flex',
+    marginTop: '40px',
+    padding: '27px 30px 27px 34px',
+    webkitBoxPack: 'justify',
+    webkitJustifyContent: 'space-between',
+    msFlexpack: 'justify',
+    justifyContent: 'space-between',
+    webkitBoxAlign: 'center',
+    webkitAlignItems: 'center',
+    msFlexAlign: 'center',
+    alignItems: 'center',
+    borderRadius: '16px',
+    backgroundColor: '#18171f',
+    maxWidth: "700px", 
+    margin: "auto",
+  },
+  
+  adressLeft: {
+    position: 'relative',
+    overflow: 'hidden',
+    maxWidth: '388px',
+  },
+  
+  adressTxt: {
+    color: '#fff',
+  },
+  
+  adressHider: {
+    position: 'absolute',
+    left: 'auto',
+    top: '0%',
+    right: '0%',
+    bottom: '0%',
+    width: '50%',
+    backgroundImage: '-webkit-gradient(linear, right top, left top, color-stop(22%, #18171f), to(rgba(24, 23, 31, 0)))',
+    backgroundImage: 'linear-gradient(270deg, #18171f 22%, rgba(24, 23, 31, 0))',
+  },
+  
+  ctaCopy: {
+    position: 'relative',
+    display: '-webkit-box',
+    display: '-webkit-flex',
+    display: '-ms-flexbox',
+    display: 'flex',
+    overflow: 'hidden',
+    padding: '17px 32px 15px',
+    webkitBoxAlign: 'center',
+    webkitAlignItems: 'center',
+    msFlexAlign: 'center',
+    alignItems: 'center',
+    webkitBoxFlex: 0,
+    webkitFlex: '0 0 auto',
+    msFlex: '0 0 auto',
+    flex: '0 0 auto',
+    borderRadius: '200px',
+    backgroundColor: '#220FD6',
+    webkitTransition: 'box-shadow 300ms ease',
+    transition: 'box-shadow 300ms ease',
+    color: '#fff',
+    lineHeight: '26px',
+    fontWeight: 700,
+    textDecoration: 'none',
+  },
+  
+//   ctaCopy:hover {
+//     box-shadow: 0 4px 22px 0 rgba(240, 5, 0, 0.25);
+//   }
+
+//   btnTxt:hover {
+//     color: #e6c4c4;
+//   }
+
+//   adressRight a:hover {
+//     color: #e6c4c4;
+//   }
 };

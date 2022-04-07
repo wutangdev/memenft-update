@@ -20,6 +20,7 @@ export default function Logo({ isWhite }) {
 const styles = {
   logoImg:{
     maxHeight:'45px',
+    borderRadius:'50%',
   },
   
 };
