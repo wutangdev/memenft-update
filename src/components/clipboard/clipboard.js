@@ -1,8 +1,12 @@
 import React from "react";
 import { Button, Box, Text } from 'theme-ui';
 import {  FaClipboardCheck } from "@react-icons/all-files/fa/FaClipboardCheck";
+// import Button from "@material-ui/core/Button";
+import MuiSnackbar from "@material-ui/core/Snackbar";
+import Alert from "@material-ui/lab/Alert";
 
 export default function CopyLink() {
+    const [alertOpen, setAlertOpen] = React.useState(false)
     const CopyToClipboard = toCopy => {
         const el = document.createElement(`textarea`)
         el.value = toCopy
@@ -18,20 +22,38 @@ export default function CopyLink() {
   return (
     <> 
     
-                <Box  sx={styles.adressWrap}>
-                  <Box  sx={styles.adressLeft}>
-                    <Text  sx={styles.adressTxt}>0x0BCbC5c3506fc10c30dAf6fAD17866E504cEea33</Text>
-                    <Box  sx={styles.adressHider}></Box>
-                  </Box>
-                        <Button  sx={styles.button}
-                            onClick={() => {
-                            CopyToClipboard('0x0BCbC5c3506fc10c30dAf6fAD17866E504cEea33')
-                            }}
-                        >
-                            <FaClipboardCheck size={'2rem'} />
-                        </Button>
-                </Box>
-            
+      <Box  sx={styles.adressWrap}>
+        <Box  sx={styles.adressLeft}>
+          <Text  sx={styles.adressTxt}>0x0BCbC5c3506fc10c30dAf6fAD17866E504cEea33</Text>
+          <Box  sx={styles.adressHider}></Box>
+        </Box>
+              <Button  sx={styles.button}
+                  onClick={() => {
+                  CopyToClipboard('0x0BCbC5c3506fc10c30dAf6fAD17866E504cEea33')
+                  setAlertOpen(true)
+                  }}
+              >
+                  <FaClipboardCheck size={'2rem'} />
+              </Button>
+      </Box>
+
+      <MuiSnackbar
+        open={alertOpen}
+        autoHideDuration={3000}
+        onClose={() => setAlertOpen(false)}
+        anchorOrigin={{
+          vertical: "center",
+          horizontal: "left"
+        }}
+      >
+        <Alert
+          onClose={() => setAlertOpen(false)}
+          severity="success"
+          variant="filled"
+        >
+          Link copied
+        </Alert>
+      </MuiSnackbar>            
     </>
   );
 
