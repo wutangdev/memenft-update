@@ -25,9 +25,9 @@ const PriceTable = ({ price, isMonthly }) => {
         {price?.features?.map((feat) => (
           <li key={feat.id} className={!feat.isAvailable ? 'unavailable' : ''}>
             {feat.isAvailable ? (
-              <AiFillCheckCircle color="#207cca" size="1.5rem" />
+              <AiFillCheckCircle className='roadmapIcon' color="#207cca" size="1.5rem" style={{minWidth:'1.5rem'}}/>
             ) : (
-              <AiFillCloseCircle color="#CED7E1" size="1.5rem" />
+              <AiFillCloseCircle className='roadmapIcon' color="#CED7E1" size="1.5rem" style={{minWidth:'1.5rem'}} />
             )}
             <span>{feat.title}</span>
           </li>

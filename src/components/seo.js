@@ -52,7 +52,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: `twitter:card`,
-          content: `summary`,
+          content: `summary_large_image`,
         },
         {
           name: `twitter:creator`,
@@ -65,6 +65,14 @@ function SEO({ description, lang, meta, title }) {
         {
           name: `twitter:description`,
           content: metaDescription,
+        },
+        {
+          name: `twitter:image`,
+          content: 'https://memenft.com/static/metaimg-c266cd73407c18216aa347b7a0cd56a4.png',
+        },
+        {
+          name: `og:image`,
+          content: 'https://memenft.com/static/metaimg-c266cd73407c18216aa347b7a0cd56a4.png',
         },
       ].concat(meta)}
     />

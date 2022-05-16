@@ -443,6 +443,10 @@ export default {
     fontWeight: 700,
     textDecoration: 'none',
   },
+
+  roadmapIcon:{
+    minWidth:'1.5rem!important',
+  },
   
 //   ctaCopy:hover {
 //     box-shadow: 0 4px 22px 0 rgba(240, 5, 0, 0.25);
