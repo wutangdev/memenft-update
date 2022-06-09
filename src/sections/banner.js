@@ -45,7 +45,7 @@ const Banner = () => {
             <Button variant="primary" sx={styles.button}>
               Buy MNFT
             </Button></a>
-            <a href="" style={{textDecoration:'none'}}>
+            <a href="https://memenft.com/" style={{textDecoration:'none'}}>
             <Button variant="primary" sx={styles.button}>
               Shop NFTs
             </Button></a>

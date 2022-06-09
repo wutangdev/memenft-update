@@ -51,7 +51,7 @@ export default function Header() {
                       />
                     </li>
                   ))}
-                  <Link sx={styles.linkOut} to=''
+                  <Link sx={styles.linkOut} to='https://memenft.com/'
                         onClick={closeMobileMenu}
                       >Marketplace
                   </Link>

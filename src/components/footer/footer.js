@@ -19,7 +19,7 @@ export default function Footer() {
           <Box sx={styles.copyright}>
             <Logo />
             <Text as="span">
-              Copyright MemeNFT {new Date().getFullYear()} 
+            Copyright © {new Date().getFullYear()} MemeNFT, LLC. All Rights Reserved.
             </Text>
           </Box>
 
